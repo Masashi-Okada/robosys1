@@ -5,14 +5,20 @@
 
 # 動作環境
 Raspberry Pi3 Model B
+
 OS: ubuntu 20.04 server
 
 # 使用したもの
 Raspberry Pi3 Model B
+
 LED ×4
+
 抵抗220Ω　×4
+
 電子ブザー
+
 ブレッドボード
+
 ジャンパー線（オス‐メス）　×10
 
 # 配線図
@@ -22,13 +28,18 @@ LED ×4
 # 使用方法
 # 「インストール」
 $ git clone git@github.com:Masashi-Okada/robosys1.git
+
 $ cd robosys1
+
 $ make
+
 $ sudo insmod myled.ko
+
 $ sudo chmod 666 /dev/myled0
 
 # 「アンインストール」
 $ sudo rmmod myled
+
 $ make clean
 
 # 「実行」
@@ -52,4 +63,5 @@ $ echo 6 > /dev/myled0
 
 # ライセンス
 //SPDX-License-Identifer: GPL-3.0
+
 // *Copyright (c) 2021 Ryuichi Ueda & Itsuki Ueno & Masashi Okada. All right reserved.
