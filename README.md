@@ -62,6 +62,6 @@ $ echo 6 > /dev/myled0
 # デモ動画
 
 # ライセンス
-//SPDX-License-Identifer: GPL-3.0
+GNU General Public Licence v3.0
 
-// *Copyright (c) 2021 Ryuichi Ueda & Itsuki Ueno & Masashi Okada. All right reserved.
+Copyright (c) 2021 Ryuichi Ueda & Itsuki Ueno & Masashi Okada. All right reserved.
