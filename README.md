@@ -13,7 +13,7 @@ Raspberry Pi3 Model B
 
 LED ×4
 
-抵抗220Ω　×4
+抵抗220Ω　×5
 
 電子ブザー
 
