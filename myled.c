@@ -7,7 +7,7 @@
 #include<linux/delay.h>
 
 MODULE_AUTHOR("Ryuichi Ueda");
-MODULE_AUTHOR("Ituki Ueno");
+MODULE_AUTHOR("Itsuki Ueno");
 MODULE_AUTHOR("Masashi Okada");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
