@@ -14,15 +14,16 @@ OS: ubuntu 20.04 server
 # 使用したもの
 Raspberry Pi3 Model B
 
-LED ×4
-
-抵抗220Ω　×5
-
-電子ブザー
-
 ブレッドボード
 
 ジャンパー線（オス‐メス）　×10
+
+LED ×4
+
+電子ブザー
+
+抵抗220Ω　×5
+
 
 # 回路図
 ![image](https://user-images.githubusercontent.com/92083106/146315685-fa5f8062-741b-4a9b-9193-18b106f8e093.png)
@@ -48,6 +49,11 @@ $ sudo chmod 666 /dev/myled0
 $ sudo rmmod myled
 
 $ make clean
+
+# 「編集」
+$ vi myled.c
+
+$ vi Makefile
 
 # 「実行」
 https://youtu.be/GKRFipL725E
