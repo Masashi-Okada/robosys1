@@ -67,4 +67,4 @@ $ echo 6 > /dev/myled0
 https://youtu.be/GKRFipL725E
 # ライセンス
 
-COPYING
+https://github.com/Masashi-Okada/robosys1/blob/03e4b15af8df64a1516a8df7d5760ce9fb4b7d32/COPYING
