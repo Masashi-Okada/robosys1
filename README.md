@@ -67,5 +67,6 @@ $ echo 6 > /dev/myled0
 https://youtu.be/GKRFipL725E
 # ライセンス
 GNU General Public License v3.0
+詳細はCOPYINGを確認してください。
 # 参照
 上野樹（__delayの使用方法について）
