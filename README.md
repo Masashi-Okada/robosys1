@@ -21,6 +21,9 @@ LED ×4
 
 ジャンパー線（オス‐メス）　×10
 
+# 回路図
+![image](https://user-images.githubusercontent.com/92083106/146315685-fa5f8062-741b-4a9b-9193-18b106f8e093.png)
+
 # 配線図
 ![image](https://user-images.githubusercontent.com/92083106/146252105-9ab0c7ee-3a8c-41b0-9679-5fcace129244.png)
 
