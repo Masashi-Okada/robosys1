@@ -71,12 +71,12 @@ $ echo 6 > /dev/myled0
 
 # ライセンス
 GNU General Public License v3.0
-https://github.com/Masashi-Okada/robosys1/blob/e9fad31a1c8bdbfa7db787feae5b8d66b433d8c7/COPYING
+詳細はCOPYINGを確認してください。
 
 # 参照
 上野樹さん（__delayの使用方法について）
 
-# コントリビューション（自分の成果）
+# コントリビューション
 ledの数やブザーを追加し点灯、消灯させる。
 
 __delayを用いてledやブザーの点灯や消灯を繰り返す。
