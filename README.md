@@ -1,7 +1,10 @@
 # LED_Device_Driver
-2021年度ロボットシステム学の課題1で作成しその後改良したデバイスドライバです。
+2021年度ロボットシステム学の課題1で改良したデバイスドライバです。
 
 入力数字（0～6）に応じたledが消灯や点灯また、電子ブザーが鳴ったりします。
+
+また、連続して点灯や消灯を繰り返し行います。
+
 
 # 動作環境
 Raspberry Pi3 Model B
@@ -47,7 +50,7 @@ $ sudo rmmod myled
 $ make clean
 
 # 「実行」
-※　ページ下にデモ動画を参照
+https://youtu.be/GKRFipL725E
 # 動作を止める
 $ echo 0 > /dev/myled0
 # ledを全てつける
@@ -63,8 +66,6 @@ $ echo 5 > /dev/myled0
 # ledを順番につけたり消したりする
 $ echo 6 > /dev/myled0 
 
-# デモ動画
-https://youtu.be/GKRFipL725E
 # ライセンス
 GNU General Public License v3.0
 
