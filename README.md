@@ -54,6 +54,7 @@ $ vi Makefile
 
 # 「実行」
 https://youtu.be/GKRFipL725E
+# 動作説明
 # 動作を止める
 $ echo 0 > /dev/myled0
 # ledを全てつける
@@ -71,15 +72,22 @@ $ echo 6 > /dev/myled0
 
 # ライセンス
 GNU General Public License v3.0
-詳細はCOPYINGを確認してください。
 
-# 参照
-上野樹さん（__delayの使用方法について）
+詳細はCOPYINGを確認してください。
 
 # コントリビューション
 ledの数やブザーを追加し点灯、消灯させる。
 
-__delayを用いてledやブザーの点灯や消灯を繰り返す。
+__delayを用いてledやブザーの点灯や消灯を同時に行ったり、順番に繰り返す。
 
-# 謝辞
+# 参照と謝辞
+上野樹さん（__delayの使用方法について）
+
 今井悠月さんのreadmeを基にこちらを作成しました。
+
+ありがとうございました。
+
+
+
+
+
