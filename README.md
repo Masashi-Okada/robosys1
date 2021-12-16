@@ -71,3 +71,7 @@ GNU General Public License v3.0
 詳細はCOPYINGを確認してください。
 # 参照
 上野樹（__delayの使用方法について）
+
+# コントリビューション
+ledの数やブザーのブザーを追加し点灯、消灯させる。
+__delayを用いてledやブザーの点灯や消灯を繰り返す
