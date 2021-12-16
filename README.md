@@ -66,6 +66,5 @@ $ echo 6 > /dev/myled0
 # デモ動画
 https://youtu.be/GKRFipL725E
 # ライセンス
-GNU General Public License v3.0
 
-Copyright (c) 2021 Ryuichi Ueda & Itsuki Ueno & Masashi Okada. All right reserved.
+COPYING
