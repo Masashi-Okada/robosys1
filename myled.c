@@ -30,7 +30,7 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		gpio_base[10] = 1 << 23;					
 		gpio_base[10] = 1 << 22;					
 		gpio_base[10] = 1 << 2;					
-	}else if(c == '1')
+	}else if(c == '1'){
 		gpio_base[7] = 1 << 25;
 	        gpio_base[7] = 1 << 24;
 		gpio_base[7] = 1 << 23;		
@@ -168,4 +168,4 @@ static void __exit cleanup_mod(void)
 }
 
 module_init(init_mod);
-module_exit(cleanup_mod);a
+module_exit(cleanup_mod);
