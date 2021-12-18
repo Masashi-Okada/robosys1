@@ -1,5 +1,6 @@
-# LED_Device_Driver
-2021年度ロボットシステム学の課題1で改良したデバイスドライバです。
+# robosys1_LED
+# 概要
+ロボットシステム学の課題1を基に改良したデバイスドライバです。
 
 0～6の入力数字に応じたledが消灯や点灯また、電子ブザーが鳴ったりします。
 
@@ -9,7 +10,7 @@
 # 動作環境
 Raspberry Pi3 Model B
 
-OS: ubuntu 20.04 server
+OS: ubuntu 18.04 server
 
 # 使用したもの
 Raspberry Pi3 Model B
