@@ -52,8 +52,8 @@ $ vi myled.c
 
 $ vi Makefile
 
-# 「実行」
-
+# 実行した様子
+https://youtu.be/WJAezhWA7AA
 # 動作説明
 # 動作を止める
 $ echo 0 > /dev/myled0
