@@ -36,7 +36,7 @@ LED （黄、青、赤、緑）
 
 
 # 使用方法
-# 「インストール」
+# インストール
 
 $ make
 
@@ -44,12 +44,12 @@ $ sudo insmod myled.ko
 
 $ sudo chmod 666 /dev/myled0
 
-# 「アンインストール」
+# アンインストール
 $ sudo rmmod myled
 
 $ make clean
 
-# 「編集」
+# 編集
 $ vi myled.c
 
 $ vi Makefile
