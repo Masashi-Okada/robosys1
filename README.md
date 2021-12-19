@@ -27,8 +27,10 @@ LED （黄、青、赤、緑）
 # 回路図
 ![image](https://user-images.githubusercontent.com/92083106/146666265-0cfb7829-b283-4fbc-a467-378b64bac22b.png)
 
-# 配線図
+# 配線図と各ledの配置
 ![image](https://user-images.githubusercontent.com/92083106/146666337-f059a100-1297-4139-ac56-73ca4cd1da0a.png)
+![image](https://user-images.githubusercontent.com/92083106/146667225-51256322-77fc-4f95-b8c1-fd46453c1e45.png)
+
 
 
 
