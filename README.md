@@ -2,12 +2,12 @@
 # 概要
 ロボットシステム学の課題1を基に改良したデバイスドライバです。
 
-0～6の入力数字に応じたledが消灯や点灯また、電子ブザーが鳴ったりします。
+0～3の入力数字に応じてledが消灯や点灯をします。
 
 また、連続して点灯や消灯を繰り返し行います。
 
 
-# 動作環境
+# 環境
 Raspberry Pi3 Model B
 
 OS: ubuntu 18.04 server
@@ -17,20 +17,19 @@ Raspberry Pi3 Model B
 
 ブレッドボード
 
-ジャンパー線（オス‐メス）　×10
+ジャンパー線（オス‐メス）　×8
 
 LED ×4
 
-電子ブザー
-
-抵抗220Ω　×5
+抵抗220Ω　×4
 
 
 # 回路図
-![image](https://user-images.githubusercontent.com/92083106/146315685-fa5f8062-741b-4a9b-9193-18b106f8e093.png)
+![image](https://user-images.githubusercontent.com/92083106/146666265-0cfb7829-b283-4fbc-a467-378b64bac22b.png)
 
 # 配線図
-![image](https://user-images.githubusercontent.com/92083106/146252105-9ab0c7ee-3a8c-41b0-9679-5fcace129244.png)
+![image](https://user-images.githubusercontent.com/92083106/146666337-f059a100-1297-4139-ac56-73ca4cd1da0a.png)
+
 
 
 
@@ -54,22 +53,16 @@ $ vi myled.c
 $ vi Makefile
 
 # 「実行」
-https://youtu.be/GKRFipL725E
+
 # 動作説明
 # 動作を止める
 $ echo 0 > /dev/myled0
 # ledを全てつける
 $ echo 1 > /dev/myled0 
-# ledとブザー全てつける
-$ echo 2 > /dev/myled0 
 # ledを同時につけたり消したりする
-$ echo 3 > /dev/myled0 
-# ブザーを鳴らす
-$ echo 4 > /dev/myled0 
-# ブザーを鳴らしたり消したりする
-$ echo 5 > /dev/myled0 
+$ echo 2 > /dev/myled0 
 # ledを順番につけたり消したりする
-$ echo 6 > /dev/myled0 
+$ echo 3 > /dev/myled0 
 
 # ライセンス
 GNU General Public License v3.0
@@ -77,14 +70,14 @@ GNU General Public License v3.0
 詳細はCOPYINGを確認してください。
 
 # コントリビューション
-ledの数やブザーを追加し点灯、消灯させる。
+ledの数を追加し点灯、消灯させる。
 
-__delayを用いてledやブザーの点灯や消灯を同時に行ったり、順番に繰り返す。
+__delayを参考にしてmdelayを用いてledの点灯や消灯を同時に行ったり、順番に繰り返す。
 
 # 参照と謝辞
-上野樹さん（__delayの使用方法について）
+上野樹さん　（https://github.com/itsukiueno/kadai1）に__delayの使用方法を参考にしました。
 
-今井悠月さんのREADMEを基にこちらを作成しました。
+今井悠月さん （https://github.com/yuzukiimai/robosys1）のREADMEを基にこちらを作成しました。
 
 ありがとうございました。
 
