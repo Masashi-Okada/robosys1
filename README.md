@@ -60,14 +60,17 @@ $ echo 0 > /dev/myled0
 →　動作を止めます。
 
 
+
 $ echo 1 > /dev/myled0 
 
 →　ledを全てつけます。
 
 
+
 $ echo 2 > /dev/myled0 
 
 →　ledを同時につけたり消したりします
+
 
 
 $ echo 3 > /dev/myled0 
