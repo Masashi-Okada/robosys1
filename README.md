@@ -55,15 +55,24 @@ $ vi Makefile
 # 実行した様子
 https://youtu.be/WJAezhWA7AA
 # 動作説明
-# 動作を止める
 $ echo 0 > /dev/myled0
-# ledを全てつける
+
+→　動作を止めます。
+
+
 $ echo 1 > /dev/myled0 
-# ledを同時につけたり消したりします
+
+→　ledを全てつけます。
+
+
 $ echo 2 > /dev/myled0 
-# ledを順番につけたり消したりします
+
+→　ledを同時につけたり消したりします
+
+
 $ echo 3 > /dev/myled0 
 
+→　ledを順番につけたり消したりします
 # ライセンス
 GNU General Public License v3.0
 
