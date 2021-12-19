@@ -56,6 +56,8 @@ $ vi Makefile
 
 # 実行した様子
 https://youtu.be/WJAezhWA7AA
+
+こちらのurlより確認いただけます。
 # 動作説明
 $ echo 0 > /dev/myled0
 
