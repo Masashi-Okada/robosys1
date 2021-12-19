@@ -59,23 +59,17 @@ $ echo 0 > /dev/myled0
 
 →　動作を止めます。
 
-
-
 $ echo 1 > /dev/myled0 
 
 →　ledを全てつけます。
 
-
-
 $ echo 2 > /dev/myled0 
 
-→　ledを同時につけたり消したりします
-
-
+→　ledを同時につけたり消したりします。
 
 $ echo 3 > /dev/myled0 
 
-→　ledを順番につけたり消したりします
+→　ledを順番につけたり消したりします。
 # ライセンス
 GNU General Public License v3.0
 
