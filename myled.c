@@ -20,7 +20,7 @@ static volatile u32 *gpio_base = NULL;
 
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
-	int i, k, a;
+	int k, a;
 	char c;
 	if(copy_from_user(&c, buf, sizeof(char)))	
 		return -EFAULT;
@@ -28,71 +28,39 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		gpio_base[10] = 1 << 25;		
 		gpio_base[10] = 1 << 24;					
 		gpio_base[10] = 1 << 23;					
-		gpio_base[10] = 1 << 22;					
-		gpio_base[10] = 1 << 2;					
+		gpio_base[10] = 1 << 22;									
 	}else if(c == '1'){
 		gpio_base[7] = 1 << 25;
 	        gpio_base[7] = 1 << 24;
 		gpio_base[7] = 1 << 23;		
-		gpio_base[7] = 1 << 22;				
-		gpio_base[10] = 1 << 2;
+		gpio_base[7] = 1 << 22;	
         }else if(c == '2'){
-	        gpio_base[7] = 1 << 25;		
-		gpio_base[7] = 1 << 24;				
-		gpio_base[7] = 1 << 23;				
-		gpio_base[7] = 1 << 22;				
-		gpio_base[7] = 1 << 2;				
-	}else if(c == '3'){
-		gpio_base[10] = 1 << 2;
 		for(k=0; k<10; k++){
 			gpio_base[7] = 1 << 25;				
 			gpio_base[7] = 1 << 24;					
 			gpio_base[7] = 1 << 23;					
 			gpio_base[7] = 1 << 22;					
-			__delay(5*1000*1000);
+			mdelay(500);
 			gpio_base[10] = 1 << 25;					
 			gpio_base[10] = 1 << 24;						
 			gpio_base[10] = 1 << 23;			
 			gpio_base[10] = 1 << 22;						
-			__delay(5*1000*1000);						
-	}}else if(c == '4'){
-                        gpio_base[10] = 1 << 25;
-		        gpio_base[10] = 1 << 24;		
-			gpio_base[10] = 1 << 23;						
-			gpio_base[10] = 1 << 22;						
-			gpio_base[7] = 1 << 2;						
-	}else if(c == '5'){
-		for(i=0; i<10; i++){
-			gpio_base[7] = 1 << 2;
-			__delay(5*1000*1000);					
-			gpio_base[10] = 1 << 2;					
-			__delay(5*1000*1000);					
-			gpio_base[7] = 1 << 2;					
-			__delay(3*1000*1000);					
-			gpio_base[10] = 1 << 2;					
-			__delay(3*1000*1000);
-	}} else if(c == '6'){
-			gpio_base[10] = 1 << 2;
-		        for(a=0; a<10; a++){
-				gpio_base[7] = 1 << 25;
-				__delay(5*1000*1000);						
-				gpio_base[10] = 1 << 25;						
-				__delay(3*1000*1000);							
-				gpio_base[7] = 1 << 24;						
-				__delay(5*1000*1000);						
-				gpio_base[10] = 1 << 24;						
-				__delay(3*1000*1000);							
-				gpio_base[7] = 1 << 23;						
-				__delay(5*1000*1000);						
-				gpio_base[10] = 1 <<23;
-				__delay(3*1000*1000);		
-				gpio_base[7] = 1 << 22;
-		        	__delay(5*1000*1000);	
-				gpio_base[10] = 1 << 22;
-				__delay(3*1000*1000);
-							
+                        mdelay(500);	
+	}}else if(c == '3'){
+		for(a=0; a<10; a++){
+			gpio_base[7] = 1 << 25;
+			mdelay(500);							
+			gpio_base[10] = 1 << 25;							
+			gpio_base[7] = 1 << 24;						
+		        mdelay(500);
+			gpio_base[10] = 1 << 24;						
+			gpio_base[7] = 1 << 23;						
+		        mdelay(500);
+			gpio_base[10] = 1 << 23;	
+			gpio_base[7] = 1 << 22;
+	        	mdelay(500);
+			gpio_base[10] = 1 << 22;
 	}}
-	
          return 1;
 }
 static struct file_operations led_fops = {
@@ -148,14 +116,7 @@ static int __init init_mod(void)
 		 const u32 mask4 = ~(0x7 << shift4);						
 		 gpio_base[index4] = (gpio_base[index4] & mask4) | (0x1 << shift4);
 
-		 const u32 buzzer5 = 2;
-		 const u32 index5 = buzzer5/10;
-		 const u32 shift5 = (buzzer5%10)*3;
-		 const u32 mask5 = ~(0x7 << shift5);
-		 gpio_base[index5] = (gpio_base[index5] & mask5) | (0x1 << shift5);
-
 		 return 0;
-
 }
 
 static void __exit cleanup_mod(void)
