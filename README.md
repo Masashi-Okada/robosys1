@@ -77,7 +77,7 @@ __delayを参考にしてmdelayを用いてledの点灯や消灯を同時に行�
 # 参照と謝辞
 上野樹さんに__delayの使用方法を参考にしました。　(https://github.com/itsukiueno/kadai1)
 
-今井悠月さんのREADMEを基にこちらを作成しました。 (https://github.com/yuzukiimai/robosys1)　
+今井悠月さんのREADMEを基にこちらを作成しました。 ( https://github.com/yuzukiimai/robosys1)　
 
 ありがとうございました。
 
