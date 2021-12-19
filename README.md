@@ -75,9 +75,9 @@ ledの数を追加し点灯、消灯させる。
 __delayを参考にしてmdelayを用いてledの点灯や消灯を同時に行ったり、順番に繰り返す。
 
 # 参照と謝辞
-上野樹さん　（https://github.com/itsukiueno/kadai1）に__delayの使用方法を参考にしました。
+上野樹さん　（https://github.com/itsukiueno/kadai1）　に__delayの使用方法を参考にしました。
 
-今井悠月さん （https://github.com/yuzukiimai/robosys1）のREADMEを基にこちらを作成しました。
+今井悠月さん （https://github.com/yuzukiimai/robosys1）　のREADMEを基にこちらを作成しました。
 
 ありがとうございました。
 
