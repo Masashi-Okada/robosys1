@@ -81,11 +81,18 @@ GNU General Public License v3.0
 
 # コントリビューション
 
-itsukiuenoさんに__delayの使用方法を参考にmdelayを用いました。　(https://github.com/itsukiueno/kadai1)
+itsukiuenoさんの__delayの使用方法を参考にmdelayを用いました。　
 
-yuzukiimaiさんのREADMEを参考にこちらを作成しました。 (https://github.com/yuzukiimai/robosys1)
+yuzukiimaiさんのREADMEを参考にこちらを作成しました。 
 
 ありがとうございました。
+
+# 参照
+上記のコントリビューションに記載したお二人の参考元です。
+
+itsukiuenoさん(https://github.com/itsukiueno/kadai1)
+
+yuzukiimaiさん(https://github.com/yuzukiimai/robosys1)
 
 
 
