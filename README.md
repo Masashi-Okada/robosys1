@@ -80,14 +80,10 @@ GNU General Public License v3.0
 詳細はCOPYINGを確認してください。
 
 # コントリビューション
-ledの数を追加し点灯、消灯させます。
 
-__delayの使用方法を基にmdelayを用いてledの点灯や消灯を同時に行ったり、順番に繰り返します。
-
-# 参照と謝辞
 itsukiuenoさんに__delayの使用方法を参考にしました。　https://github.com/itsukiueno/kadai1
 
-yuzukiimaiさんのREADMEを基にこちらを作成しました。 https://github.com/yuzukiimai/robosys1
+yuzukiimaiさんのREADMEを参考にこちらを作成しました。 https://github.com/yuzukiimai/robosys1
 
 ありがとうございました。
 
