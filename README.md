@@ -88,7 +88,7 @@ yuzukiimaiさんのREADMEを参考にこちらを作成しました。
 ありがとうございました。
 
 # 参照
-上記のコントリビューションに記載したお二人の参考元です。
+上記のコントリビューションに記載したお二人の参照元です。
 
 itsukiuenoさん(https://github.com/itsukiueno/kadai1)
 
