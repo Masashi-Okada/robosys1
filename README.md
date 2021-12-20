@@ -45,9 +45,9 @@ $ sudo insmod myled.ko
 $ sudo chmod 666 /dev/myled0
 
 # アンインストール
-$ sudo rmmod myled
-
 $ make clean
+
+$ sudo rmmod myled
 
 # 編集
 $ vi myled.c
@@ -81,9 +81,9 @@ GNU General Public License v3.0
 
 # コントリビューション
 
-itsukiuenoさんに__delayの使用方法を参考にしました。　https://github.com/itsukiueno/kadai1
+itsukiuenoさんに__delayの使用方法を参考にmdelayを用いました。　(https://github.com/itsukiueno/kadai1)
 
-yuzukiimaiさんのREADMEを参考にこちらを作成しました。 https://github.com/yuzukiimai/robosys1
+yuzukiimaiさんのREADMEを参考にこちらを作成しました。 (https://github.com/yuzukiimai/robosys1)
 
 ありがとうございました。
 
